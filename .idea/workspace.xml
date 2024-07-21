@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0002ffaa-0d77-49e4-b8bb-d6669202a4f6" name="Changes" comment="Initial Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datastructure/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datastructure/src/main/java/set/HashMapTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datastructure/src/main/java/set/HashSetTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datastructure/src/main/java/set/LinkedHashSetTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datastructure/src/main/java/set/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datastructure/src/main/java/set/TreeSetTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list/src/main/java/ArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/list/src/main/java/ArrayListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/list/target/classes/ArrayListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/list/target/classes/ArrayListTest.class" afterDir="false" />
+    <list default="true" id="0002ffaa-0d77-49e4-b8bb-d6669202a4f6" name="Changes" comment="Add TreeSet, HashSet, LinkedHashMap test classes, and Student class&#10;&#10;This initial commit includes the creation of several new classes for data structures testing. Specifically, TreeSetTest, HashSetTest, and LinkedHashSetTest classes have been added. A Student class was also created for object testing in the respective data structure classes. Updates for the .idea compiler.xml, encodings.xml, misc.xml, and workspace.xml files were implemented as well for proper setup of the project environment.">
+      <change afterPath="$PROJECT_DIR$/datastructure/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +160,7 @@
       <option name="presentableId" value="Default" />
       <updated>1721521165862</updated>
       <workItem from="1721521166925" duration="1569000" />
-      <workItem from="1721524911019" duration="15832000" />
+      <workItem from="1721524911019" duration="16759000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -190,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721524575396</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add TreeSet, HashSet, LinkedHashMap test classes, and Student class&#10;&#10;This initial commit includes the creation of several new classes for data structures testing. Specifically, TreeSetTest, HashSetTest, and LinkedHashSetTest classes have been added. A Student class was also created for object testing in the respective data structure classes. Updates for the .idea compiler.xml, encodings.xml, misc.xml, and workspace.xml files were implemented as well for proper setup of the project environment.">
+      <option name="closed" value="true" />
+      <created>1721596786608</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721596786608</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +194,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="Add TreeSet, HashSet, LinkedHashMap test classes, and Student class&#10;&#10;This initial commit includes the creation of several new classes for data structures testing. Specifically, TreeSetTest, HashSetTest, and LinkedHashSetTest classes have been added. A Student class was also created for object testing in the respective data structure classes. Updates for the .idea compiler.xml, encodings.xml, misc.xml, and workspace.xml files were implemented as well for proper setup of the project environment." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add TreeSet, HashSet, LinkedHashMap test classes, and Student class&#10;&#10;This initial commit includes the creation of several new classes for data structures testing. Specifically, TreeSetTest, HashSetTest, and LinkedHashSetTest classes have been added. A Student class was also created for object testing in the respective data structure classes. Updates for the .idea compiler.xml, encodings.xml, misc.xml, and workspace.xml files were implemented as well for proper setup of the project environment." />
   </component>
 </project>
