@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/list/pom.xml" />
         <option value="$PROJECT_DIR$/set/pom.xml" />
+        <option value="$PROJECT_DIR$/datastructure/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

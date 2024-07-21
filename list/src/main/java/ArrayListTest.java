@@ -84,7 +84,8 @@ public class ArrayListTest {
         System.out.println("----------------------");
 
         // Iterate by Iterable forEach with Method Reference
-        arrayList.forEach(element -> System.out.println(element));
+        arrayList.forEach(element -> System.out.print(element));
+        arrayList.forEach(ArrayListTest::printLamiaa);
         System.out.println("----------------------");
 
         // Iterate by Streaming
@@ -123,6 +124,10 @@ public class ArrayListTest {
                 .limit(5)
                 .filter(element -> element % 2 != 0)
                 .forEach(System.out::println);
+    }
+
+    public static void printLamiaa(Object element) {
+        System.out.println("Welcome Lamiaa with element = " + element);
     }
 
     public static List<Integer> distinct(List<Integer> list) {
