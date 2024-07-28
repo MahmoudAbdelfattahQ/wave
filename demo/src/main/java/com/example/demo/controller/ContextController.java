@@ -1,6 +1,8 @@
 package com.example.demo.controller;
 
 import com.example.demo.config.Context;
+import com.example.demo.designpattern.singleton.eager.DbConnection;
+import com.example.demo.di.Tire;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,6 +15,9 @@ public class ContextController {
     public String setName1InContextApi() {
         Context.setName("Lamiaa");
         System.out.println(Context.getName());
+
+        DbConnection.getInstance().save(new Tire());
+
         return "Okay";
     }
 

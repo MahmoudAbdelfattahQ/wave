@@ -5,12 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0002ffaa-0d77-49e4-b8bb-d6669202a4f6" name="Changes" comment="Add TreeSet, HashSet, LinkedHashMap test classes, and Student class&#10;&#10;This initial commit includes the creation of several new classes for data structures testing. Specifically, TreeSetTest, HashSetTest, and LinkedHashSetTest classes have been added. A Student class was also created for object testing in the respective data structure classes. Updates for the .idea compiler.xml, encodings.xml, misc.xml, and workspace.xml files were implemented as well for proper setup of the project environment.">
-      <change afterPath="$PROJECT_DIR$/datastructure/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wave2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wave2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/datastructure/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/list/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/demo1">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -44,11 +67,13 @@
     "Application.TreeSetTest.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.data-structure [clean,install].executor": "Run",
+    "Maven.demo [clean,install].executor": "Run",
     "Maven.list [clean,install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/abdelaziz/IdeaProjects/wave2/list/src/main/java",
     "node.js.detected.package.eslint": "true",
@@ -56,7 +81,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.32988507",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
@@ -161,6 +186,8 @@
       <updated>1721521165862</updated>
       <workItem from="1721521166925" duration="1569000" />
       <workItem from="1721524911019" duration="16759000" />
+      <workItem from="1722189880989" duration="610000" />
+      <workItem from="1722206266392" duration="704000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
