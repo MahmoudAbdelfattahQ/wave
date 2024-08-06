@@ -1,7 +1,10 @@
 package com.example.spring2.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
+
+@EnableConfigurationProperties(StudentProperties.class)
 @ConfigurationProperties(prefix = "student")
 public class StudentProperties {
 

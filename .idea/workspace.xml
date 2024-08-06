@@ -4,44 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0002ffaa-0d77-49e4-b8bb-d6669202a4f6" name="Changes" comment="Add TreeSet, HashSet, LinkedHashMap test classes, and Student class&#10;&#10;This initial commit includes the creation of several new classes for data structures testing. Specifically, TreeSetTest, HashSetTest, and LinkedHashSetTest classes have been added. A Student class was also created for object testing in the respective data structure classes. Updates for the .idea compiler.xml, encodings.xml, misc.xml, and workspace.xml files were implemented as well for proper setup of the project environment.">
-      <change afterPath="$PROJECT_DIR$/spring2/src/main/java/com/example/spring2/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring2/src/main/java/com/example/spring2/config/StudentConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring2/src/main/java/com/example/spring2/config/StudentProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring2/src/main/java/com/example/spring2/controller/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring2/src/main/java/com/example/spring2/model/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring2/src/main/java/com/example/spring2/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/wave2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wave2.iml" afterDir="false" />
+    <list default="true" id="0002ffaa-0d77-49e4-b8bb-d6669202a4f6" name="Changes" comment="Add spring2 module and rename demo module to spring1&#10;&#10;Renamed the `demo` module to `spring1` for better clarity and added the `spring2` module. The `spring2` module includes new configuration, model, and controller classes for managing student properties and dependencies. Additionally, updated project setup files to align with the new module configurations.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/src/main/java/com/example/demo/config/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/config/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/src/main/java/com/example/demo/config/Context.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/src/main/java/com/example/demo/controller/CarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/ContextController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/src/main/java/com/example/demo/controller/ContextController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/HealthCheckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/src/main/java/com/example/demo/controller/HealthCheckController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/controller/SingletonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/src/main/java/com/example/demo/controller/SingletonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/designpattern/singleton/billpugh/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/src/main/java/com/example/demo/designpattern/singleton/billpugh/DbConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/designpattern/singleton/eager/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/src/main/java/com/example/demo/designpattern/singleton/eager/DbConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/designpattern/singleton/eager/EagerSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/src/main/java/com/example/demo/designpattern/singleton/eager/EagerSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/designpattern/singleton/eager/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/src/main/java/com/example/demo/designpattern/singleton/eager/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/designpattern/singleton/enumsingleton/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/src/main/java/com/example/demo/designpattern/singleton/enumsingleton/DbConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/designpattern/singleton/lazy/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/src/main/java/com/example/demo/designpattern/singleton/lazy/DbConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/di/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/src/main/java/com/example/demo/di/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/di/Tire.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/src/main/java/com/example/demo/di/Tire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/test/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/src/main/java/com/example/demo/test/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/test/SpellChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/src/main/java/com/example/demo/test/SpellChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/test/TextEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/src/main/java/com/example/demo/test/TextEditor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/html/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/src/main/resources/html/MainPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring1/src/test/java/com/example/demo/DemoApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring2/src/main/java/com/example/spring2/config/StudentConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring2/src/main/java/com/example/spring2/config/StudentConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring2/src/main/java/com/example/spring2/config/StudentProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring2/src/main/java/com/example/spring2/config/StudentProperties.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,39 +52,39 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ArrayListTest.executor": "Run",
-    "Application.HashMapTest.executor": "Run",
-    "Application.HashSetTest.executor": "Run",
-    "Application.LinkedHashSetTest.executor": "Run",
-    "Application.LinkedListTest.executor": "Run",
-    "Application.Test.executor": "Run",
-    "Application.TreeSetTest.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.data-structure [clean,install].executor": "Run",
-    "Maven.demo [clean,install].executor": "Run",
-    "Maven.list [clean,install].executor": "Run",
-    "Maven.spring2 [clean,install].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/abdelaziz/IdeaProjects/wave2/spring2/src/main/java/com/example/spring2",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.32988507",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ArrayListTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HashMapTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HashSetTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LinkedHashSetTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LinkedListTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TreeSetTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.data-structure [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.list [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.spring2 [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/abdelaziz/IdeaProjects/wave2/spring2/src/main/java/com/example/spring2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.32988507&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/spring2/src/main/java/com/example/spring2" />
@@ -214,6 +180,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Spring3Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="spring3" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.spring3.Spring3Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.HashMapTest" />
@@ -236,7 +210,9 @@
       <workItem from="1721524911019" duration="16759000" />
       <workItem from="1722189880989" duration="610000" />
       <workItem from="1722206266392" duration="704000" />
-      <workItem from="1722862433405" duration="935000" />
+      <workItem from="1722862433405" duration="2759000" />
+      <workItem from="1722964845631" duration="823000" />
+      <workItem from="1722981719958" duration="89000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -262,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721596786608</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add spring2 module and rename demo module to spring1&#10;&#10;Renamed the `demo` module to `spring1` for better clarity and added the `spring2` module. The `spring2` module includes new configuration, model, and controller classes for managing student properties and dependencies. Additionally, updated project setup files to align with the new module configurations.">
+      <option name="closed" value="true" />
+      <created>1722863446392</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722863446392</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +256,8 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Add TreeSet, HashSet, LinkedHashMap test classes, and Student class&#10;&#10;This initial commit includes the creation of several new classes for data structures testing. Specifically, TreeSetTest, HashSetTest, and LinkedHashSetTest classes have been added. A Student class was also created for object testing in the respective data structure classes. Updates for the .idea compiler.xml, encodings.xml, misc.xml, and workspace.xml files were implemented as well for proper setup of the project environment." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add TreeSet, HashSet, LinkedHashMap test classes, and Student class&#10;&#10;This initial commit includes the creation of several new classes for data structures testing. Specifically, TreeSetTest, HashSetTest, and LinkedHashSetTest classes have been added. A Student class was also created for object testing in the respective data structure classes. Updates for the .idea compiler.xml, encodings.xml, misc.xml, and workspace.xml files were implemented as well for proper setup of the project environment." />
+    <MESSAGE value="Add spring2 module and rename demo module to spring1&#10;&#10;Renamed the `demo` module to `spring1` for better clarity and added the `spring2` module. The `spring2` module includes new configuration, model, and controller classes for managing student properties and dependencies. Additionally, updated project setup files to align with the new module configurations." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add spring2 module and rename demo module to spring1&#10;&#10;Renamed the `demo` module to `spring1` for better clarity and added the `spring2` module. The `spring2` module includes new configuration, model, and controller classes for managing student properties and dependencies. Additionally, updated project setup files to align with the new module configurations." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
