@@ -1,35 +1,54 @@
 package com.example.spring3.service.student;
 
-import com.example.demo.controller.StudentsController;
-import com.example.demo.dao.StudentRepo;
-import com.example.demo.model.dto.StudentDto;
+import com.example.spring3.model.dto.StudentDto;
+import com.example.spring3.model.entity.Student;
+import com.example.spring3.util.RepoUtils;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.util.Collection;
-import java.util.Map;
-import java.util.Optional;
+import com.example.spring3.dao.StudentRepo;
+import com.example.spring3.controller.StudentsController;
 
+import java.util.*;
+
+@Slf4j
 @Component
 public class StudentServiceImpl implements StudentService {
-
-    public static final Logger logger = org.apache.logging.log4j.LogManager.getLogger(StudentsController.class);
 
     private final StudentRepo studentRepo;
 
     @Autowired
     public StudentServiceImpl(StudentRepo studentRepo) {
         this.studentRepo = studentRepo;
-        logger.trace("Successfully injected StudentRepo into StudentService");
+        log.info("Successfully injected StudentRepo into StudentService");
     }
 
-    public void insertOrUpdateStudent(StudentDto studentDto) {
-        studentRepo.insertOrUpdateStudent(studentDto);
+    public void insertStudent(StudentDto studentDto) {
+        Student student = new Student();
+        student.setId(String.valueOf(RepoUtils.ID));
+        student.setName(studentDto.getName());
+        student.setEmail(studentDto.getEmail());
+        student.setAge(studentDto.getAge());
+        RepoUtils.ID++;
+
+        studentRepo.insertOrUpdateStudent(student);
     }
 
-    public Map<String, StudentDto> getStudentDtoMap() {
-        return studentRepo.getStudentDtoMap();
+    @Override
+    public void updateStudent(String id, StudentDto studentDto) {
+        Student student = new Student();
+        student.setId(id);
+        student.setName(studentDto.getName());
+        student.setEmail(studentDto.getEmail());
+        student.setAge(studentDto.getAge());
+
+        studentRepo.insertOrUpdateStudent(student);
+    }
+
+    public Map<String, Student> getStudentMap() {
+        return studentRepo.getStudentMap();
     }
 
     public int countStudents() {
@@ -41,21 +60,20 @@ public class StudentServiceImpl implements StudentService {
     }
 
     public Collection<StudentDto> findAll() {
-        return studentRepo.findAll();
+        return studentRepo.findAll()
+                .stream()
+                .map(student -> new StudentDto(student.getName(), student.getEmail(), student.getAge()))
+                .toList();
     }
 
-    public void removeStudent(StudentDto studentDto) {
-        studentRepo.removeStudent(studentDto);
+    public void removeStudent(String key) {
+        studentRepo.removeStudent(key);
     }
 
     public Optional<StudentDto> findFirstStudent() {
-        return studentRepo.findAll().stream().findFirst();
-    }
-
-    public Optional<StudentDto> filterFirstStudentByEmail(String email) {
         return studentRepo.findAll()
                 .stream()
-                .filter(studentDto -> studentDto.getEmail().equals(email))
+                .map(student -> new StudentDto(student.getName(), student.getEmail(), student.getAge()))
                 .findFirst();
     }
 }

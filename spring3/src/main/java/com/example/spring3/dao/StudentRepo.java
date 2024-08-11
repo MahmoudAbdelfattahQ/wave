@@ -1,22 +1,26 @@
 package com.example.spring3.dao;
 
-import com.example.demo.model.dto.StudentDto;
+import com.example.spring3.model.entity.Student;
 import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+@Slf4j
 @Component
 public class StudentRepo {
 
+    private static final String CLASS_NAME = StudentRepo.class.getSimpleName();
+
     private static StudentRepo studentRepo;
     @Getter
-    private final Map<String, StudentDto> studentDtoMap;
+    private final Map<String, Student> studentMap;
 
     public StudentRepo() {
-        studentDtoMap = new HashMap<>();
+        studentMap = new HashMap<>();
     }
 
     public static StudentRepo getInstance() {
@@ -26,23 +30,27 @@ public class StudentRepo {
         return studentRepo;
     }
 
-    public void insertOrUpdateStudent(StudentDto studentDto) {
-        studentDtoMap.put(studentDto.getEmail(), studentDto);
+    public void insertOrUpdateStudent(Student student) {
+        String methodName = CLASS_NAME + ".insertOrUpdateStudent()";
+        studentMap.put(student.getId(), student);
+        log.info("Student inserted/updated successfully");
+        log.debug("{}, Student id: {}", methodName, student.getId());
     }
 
     public int countStudents() {
-        return studentDtoMap.size();
+        return studentMap.size();
     }
 
     public void clear() {
-        studentDtoMap.clear();
+        studentMap.clear();
     }
 
-    public Collection<StudentDto> findAll() {
-        return studentDtoMap.values();
+    public Collection<Student> findAll() {
+        return studentMap.values();
     }
 
-    public void removeStudent(StudentDto studentDto) {
-        studentDtoMap.remove(studentDto.getEmail());
+    public void removeStudent(String key) {
+        studentMap.remove(key);
+        log.info("Student removed successfully with id: {}", key);
     }
 }

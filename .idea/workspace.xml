@@ -4,20 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0002ffaa-0d77-49e4-b8bb-d6669202a4f6" name="Changes" comment="Add spring3 module and update configurations">
-      <change afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/controller/StudentsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/dao/StudentRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/dao/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/model/dto/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/model/dto/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/model/dto/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/model/dto/LombokTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/service/student/StudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/service/student/StudentServiceImpl.java" afterDir="false" />
+    <list default="true" id="0002ffaa-0d77-49e4-b8bb-d6669202a4f6" name="Changes" comment="Add Service, Repository layers, logger, and lombok">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring3/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring3/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/controller/DriveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/controller/DriveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/model/dto/StudentDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/model/dto/StudentDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/controller/StudentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/controller/StudentsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/dao/StudentRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/dao/StudentRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/dao/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/dao/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/service/student/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/service/student/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/service/student/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/service/student/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring3/src/test/java/com/example/spring3/Spring3ApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,42 +58,42 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Application.ArrayListTest.executor": "Run",
-    "Application.HashMapTest.executor": "Run",
-    "Application.HashSetTest.executor": "Run",
-    "Application.LinkedHashSetTest.executor": "Run",
-    "Application.LinkedListTest.executor": "Run",
-    "Application.Test.executor": "Run",
-    "Application.TreeSetTest.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.data-structure [clean,install].executor": "Run",
-    "Maven.demo [clean,install].executor": "Run",
-    "Maven.list [clean,install].executor": "Run",
-    "Maven.spring2 [clean,install].executor": "Run",
-    "Maven.spring3 [clean,install].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "Spring Boot.Spring3Application.executor": "Run",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/abdelaziz/IdeaProjects/wave2/spring3/src/main/java/com/example/spring3/service",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.32988507",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Application.ArrayListTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HashMapTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HashSetTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LinkedHashSetTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LinkedListTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TreeSetTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.data-structure [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.list [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.spring2 [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.spring3 [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Spring3Application.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/abdelaziz/IdeaProjects/wave2/spring3/src/main/java/com/example/spring3/service&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.32988507&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/service" />
@@ -232,7 +228,9 @@
       <workItem from="1722862433405" duration="2759000" />
       <workItem from="1722964845631" duration="823000" />
       <workItem from="1722981719958" duration="1031000" />
-      <workItem from="1723298906663" duration="332000" />
+      <workItem from="1723298906663" duration="1094000" />
+      <workItem from="1723328138020" duration="1828000" />
+      <workItem from="1723368114149" duration="17000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -274,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722982064109</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add Service, Repository layers, logger, and lombok">
+      <option name="closed" value="true" />
+      <created>1723299378730</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1723299378730</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +292,9 @@
     <MESSAGE value="Add TreeSet, HashSet, LinkedHashMap test classes, and Student class&#10;&#10;This initial commit includes the creation of several new classes for data structures testing. Specifically, TreeSetTest, HashSetTest, and LinkedHashSetTest classes have been added. A Student class was also created for object testing in the respective data structure classes. Updates for the .idea compiler.xml, encodings.xml, misc.xml, and workspace.xml files were implemented as well for proper setup of the project environment." />
     <MESSAGE value="Add spring2 module and rename demo module to spring1&#10;&#10;Renamed the `demo` module to `spring1` for better clarity and added the `spring2` module. The `spring2` module includes new configuration, model, and controller classes for managing student properties and dependencies. Additionally, updated project setup files to align with the new module configurations." />
     <MESSAGE value="Add spring3 module and update configurations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add spring3 module and update configurations" />
+    <MESSAGE value="Add Service, Repository layers, and Lombok" />
+    <MESSAGE value="Add Service, Repository layers, logger, and lombok" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Service, Repository layers, logger, and lombok" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

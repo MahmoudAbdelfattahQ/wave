@@ -1,6 +1,7 @@
 package com.example.spring3.service.student;
 
-import com.example.demo.model.dto.StudentDto;
+import com.example.spring3.model.dto.StudentDto;
+import com.example.spring3.model.entity.Student;
 
 import java.util.Collection;
 import java.util.Map;
@@ -8,9 +9,11 @@ import java.util.Optional;
 
 public interface StudentService {
 
-    void insertOrUpdateStudent(StudentDto studentDto);
+    void insertStudent(StudentDto studentDto);
 
-    Map<String, StudentDto> getStudentDtoMap();
+    void updateStudent(String id, StudentDto studentDto);
+
+    Map<String, Student> getStudentMap();
 
     int countStudents();
 
@@ -18,9 +21,7 @@ public interface StudentService {
 
     Collection<StudentDto> findAll();
 
-    void removeStudent(StudentDto studentDto);
+    void removeStudent(String key);
 
     Optional<StudentDto> findFirstStudent();
-
-    Optional<StudentDto> filterFirstStudentByEmail(String email);
 }

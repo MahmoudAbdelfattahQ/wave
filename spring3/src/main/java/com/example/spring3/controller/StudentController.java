@@ -1,6 +1,6 @@
 package com.example.spring3.controller;
 
-import com.example.demo.model.dto.StudentDto;
+import com.example.spring3.model.dto.StudentDto;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;

@@ -1,7 +1,7 @@
 package com.example.spring3.controller;
 
-import com.example.demo.model.dto.StudentDto;
-import com.example.demo.service.student.StudentService;
+import com.example.spring3.model.dto.StudentDto;
+import com.example.spring3.service.student.StudentService;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -11,7 +11,7 @@ import java.util.Collection;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("student")
+@RequestMapping("students")
 public class StudentsController {
 
     public static final Logger logger = org.apache.logging.log4j.LogManager.getLogger(StudentsController.class);
@@ -21,13 +21,13 @@ public class StudentsController {
     @Autowired
     public StudentsController(StudentService studentService) {
         this.studentService = studentService;
-        logger.trace("Successfully injected StudentService into StudentsController");
+        logger.info("Successfully injected StudentService into StudentsController");
     }
 
     @PostMapping("insert")
     public void insertStudentApi(@RequestBody StudentDto studentDto) {
-        studentService.insertOrUpdateStudent(studentDto);
-        logger.info("Successfully added {} into the hashMap ", studentDto);
+        studentService.insertStudent(studentDto);
+        logger.debug("Successfully added {} into the hashMap ", studentDto);
     }
 
     @GetMapping("size")
@@ -50,30 +50,57 @@ public class StudentsController {
         return studentService.findAll();
     }
 
-    @DeleteMapping("deleteByEmail")
+    @DeleteMapping("delete/{id}")
+    public void deleteStudentApi(@PathVariable String id) {
+        studentService.removeStudent(id);
+    }
+
+    /*@DeleteMapping("deleteByEmail")
     public void deleteStudentByEmailWithPathVariableApi(@RequestParam String email) {
         Optional<StudentDto> studentDtoOptional = studentService.filterFirstStudentByEmail(email);
 
-        studentDtoOptional.ifPresent(student -> studentService.getStudentDtoMap().remove(student.getEmail()));
-    }
+        studentDtoOptional.ifPresent(student -> studentService.getStudentMap().remove(student.getEmail()));
+    }*/
 
     // todo: This API has an issue in updating the key as well. Solve it please
-    @PutMapping("updateByEmail/{email}")
-    public ResponseEntity<String> updateStudentApi(@RequestBody StudentDto studentDto, @PathVariable String email) {
+    // todo: The following API is not used
+    /*@PutMapping("updateByEmail/{email}")
+    public ResponseEntity<String> updateStudentByEmailApi(@RequestBody StudentDto studentDto, @PathVariable String email) {
         logger.info("accepted email: {} from client", email);
         if (!email.contains(".com") || !email.contains("@")) {
             String returnMessage = email + " is not Valid";
             logger.error("The Email with id: {}", returnMessage);
             return ResponseEntity.badRequest().body("");
         }
-        if (!studentService.getStudentDtoMap().containsKey(email)) {
+        if (!studentService.getStudentMap().containsKey(email)) {
             logger.error("Email is not found!!");
             return ResponseEntity.notFound().build();
         }
 
         studentService.insertOrUpdateStudent(studentDto);
-        logger.info("Map keys are: {}", studentService.getStudentDtoMap().keySet());
+        logger.info("Map keys are: {}", studentService.getStudentMap().keySet());
         logger.info("Successfully added {} into the hashMap with email {}", studentDto, email);
         return ResponseEntity.ok("Data updated successfully");
+    }*/
+
+    @PutMapping("update/{id}")
+    public ResponseEntity<String> updateStudentApi(@RequestBody StudentDto studentDto, @PathVariable String id) {
+        if (!studentDto.getEmail().contains(".com") || !studentDto.getEmail().contains("@")) {
+            String returnMessage = studentDto.getEmail() + " is not Valid";
+            logger.error("The Email with id: {}", returnMessage);
+            return ResponseEntity.badRequest().body("");
+        }
+        if (!studentService.getStudentMap().containsKey(id)) {
+            logger.error("Student is not found!!");
+            return ResponseEntity.notFound().build();
+        }
+
+        studentService.updateStudent(id, studentDto);
+        return ResponseEntity.ok("Data updated successfully");
+    }
+
+    @DeleteMapping("removeAll")
+    public void removeAllStudentsApi() {
+        studentService.clear();
     }
 }

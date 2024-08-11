@@ -1,6 +1,7 @@
 package com.example.spring3.dao;
 
-import com.example.demo.model.dto.StudentDto;
+
+import com.example.spring3.model.dto.StudentDto;
 
 import java.util.HashMap;
 import java.util.HashSet;

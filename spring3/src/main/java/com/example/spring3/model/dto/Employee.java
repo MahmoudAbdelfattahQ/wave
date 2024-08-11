@@ -1,5 +1,6 @@
 package com.example.spring3.model.dto;
 
+import com.example.spring3.util.designpattern.builder.Address;
 import lombok.*;
 
 @Getter
@@ -25,5 +26,4 @@ public class Employee {
     private float salary;
     @ToString.Exclude
     private Address address;
-
 }
