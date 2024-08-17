@@ -2,30 +2,35 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="datastructure" />
-        <module name="list" />
+        <module name="error-handling" />
         <module name="data-structure" />
         <module name="spring3" />
         <module name="spring2" />
         <module name="spring1" />
+        <module name="datastructure" />
+        <module name="list" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="set" target="18" />
       <module name="spring2 (1)" target="17" />
       <module name="untitled" target="1.8" />
+      <module name="wave2" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="error-handling" options="-parameters" />
       <module name="spring1" options="-parameters" />
       <module name="spring2" options="-parameters" />
       <module name="spring2 (1)" options="-parameters" />
       <module name="spring3" options="-parameters" />
+      <module name="wave2" options="" />
     </option>
   </component>
 </project>

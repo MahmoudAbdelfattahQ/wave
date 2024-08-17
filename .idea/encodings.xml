@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/../spring2/spring2/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/datastructure/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/datastructure/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/error-handling/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/list/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/list/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/set/src/main/java" charset="UTF-8" />
@@ -11,6 +12,8 @@
     <file url="file://$PROJECT_DIR$/spring1/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring2/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/untitled/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/untitled/src/main/resources" charset="UTF-8" />
   </component>

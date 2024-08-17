@@ -16,6 +16,8 @@
         <option value="$PROJECT_DIR$/../spring2/spring2/pom.xml" />
         <option value="$PROJECT_DIR$/spring2/pom.xml" />
         <option value="$PROJECT_DIR$/spring3/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/error-handling/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
