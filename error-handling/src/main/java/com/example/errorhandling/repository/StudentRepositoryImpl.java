@@ -1,15 +1,13 @@
 package com.example.errorhandling.repository;
 
-import com.example.errorhandling.error.exception.StudentNotFoundException;
 import com.example.errorhandling.model.entity.Student;
-import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
+import java.util.Optional;
 
 @Slf4j
 @Component
@@ -17,7 +15,6 @@ public class StudentRepositoryImpl implements StudentRepository {
 
     private static final String CLASS_NAME = StudentRepositoryImpl.class.getSimpleName();
 
-    @Getter
     private final Map<String, Student> studentMap;
 
     public StudentRepositoryImpl() {
@@ -32,26 +29,16 @@ public class StudentRepositoryImpl implements StudentRepository {
     }
 
     @Override
-    public Student findById(String id) throws StudentNotFoundException {
-        Object[] params;
-        String methodName = CLASS_NAME + ".findById()";
-        log.trace("Id of student that I will search with is: {}", id);
-        Student student = studentMap.get(id);
-        if (Objects.isNull(student)) {
-            throw new StudentNotFoundException("Student with id: " + id + " is not found");
-        }
-        params = new Object[]{methodName, id, student.getName(), student.getEmail(), student.getAge()};
-        log.debug("{}, Successfully found student with id: {}, name: {}, email: {}, and age: {}", params);
-        return student;
+    public Student findById(String id) {
+        return studentMap.get(id);
     }
 
     @Override
-    public Student findByEmail(String email) throws StudentNotFoundException {
+    public Optional<Student> findByEmail(String email) {
         return studentMap.values()
                 .stream()
                 .filter(student -> student.getEmail().equals(email))
-                .findFirst()
-                .orElseThrow(() -> new StudentNotFoundException("Student with email: " + email + " id not found"));
+                .findFirst();
     }
 
     public int countStudents() {
@@ -69,5 +56,17 @@ public class StudentRepositoryImpl implements StudentRepository {
     public void removeStudent(String key) {
         studentMap.remove(key);
         log.info("Student removed successfully with id: {}", key);
+    }
+
+    @Override
+    public boolean contains(String id) {
+        return studentMap.containsKey(id);
+    }
+
+    @Override
+    public boolean containsEmail(String email) {
+        return studentMap.values()
+                .stream()
+                .anyMatch(student -> student.getEmail().equals(email));
     }
 }

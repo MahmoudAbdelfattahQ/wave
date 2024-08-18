@@ -4,31 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0002ffaa-0d77-49e4-b8bb-d6669202a4f6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/error-handling/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error-handling/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/ErrorHandlingApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/ServletInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/controller/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/error/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/error/exception/StudentNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/error/model/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/model/dto/StudentDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/model/entity/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/repository/StudentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/repository/StudentRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/service/student/StudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/service/student/StudentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/util/RepoUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/util/TimingUtilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error-handling/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error-handling/src/test/java/com/example/errorhandling/ErrorHandlingApplicationTests.java" afterDir="false" />
+    <list default="true" id="0002ffaa-0d77-49e4-b8bb-d6669202a4f6" name="Changes" comment="Create new module to explain error handling and validation">
+      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/controller/DelegationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/delegation/ConsolePrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/delegation/FilePrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/delegation/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/delegation/PrinterHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/delegation/RealPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/error/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/error/model/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/util/printer/PrinterFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/util/printer/PrinterUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/util/printer/Printers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/util/Country.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/util/Utilities.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/wave2.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/repository/StudentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/repository/StudentRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/service/student/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/service/student/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/service/student/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/service/student/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/util/designpattern/factory/AnimalFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/util/designpattern/factory/AnimalFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +56,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -82,6 +82,7 @@
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "Application.ArrayListTest.executor": "Run",
+    "Application.DelegationTest.executor": "Run",
     "Application.ErrorHandlingApplication.executor": "Run",
     "Application.HashMapTest.executor": "Run",
     "Application.HashSetTest.executor": "Run",
@@ -94,6 +95,7 @@
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.data-structure [clean,install].executor": "Run",
     "Maven.demo [clean,install].executor": "Run",
+    "Maven.function-programming [clean,install].executor": "Run",
     "Maven.list [clean,install].executor": "Run",
     "Maven.parent [clean,install,-U].executor": "Run",
     "Maven.parent [clean,install].executor": "Run",
@@ -107,11 +109,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "Spring Boot.ErrorHandlingApplication.executor": "Run",
+    "Spring Boot.FunctionProgrammingApplication.executor": "Debug",
     "Spring Boot.Spring3Application.executor": "Run",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/abdelaziz/IdeaProjects/wave2/error-handling/src/main/java/com/example/errorhandling",
+    "last_opened_file_path": "/Users/abdelaziz/IdeaProjects/wave2/function-programming/src/main/java/org/example/functionprogramming",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -127,11 +130,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming" />
       <recent name="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling" />
       <recent name="$PROJECT_DIR$/error-handling/src/main/java/org/example/errorhandling" />
       <recent name="$PROJECT_DIR$/error-handling/src/main/java/org/example/errorhandling/service/student" />
       <recent name="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/service" />
-      <recent name="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/model/dto" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.errorhandling.controller" />
@@ -140,11 +143,11 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn clean install" />
       <command value="mvn clean install -U" />
+      <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ErrorHandlingApplication">
+  <component name="RunManager" selected="Spring Boot.FunctionProgrammingApplication">
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="spring1" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
@@ -165,6 +168,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FunctionProgrammingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="function-programming" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.functionprogramming.FunctionProgrammingApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Spring2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="spring2" />
@@ -180,6 +190,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.FunctionProgrammingApplication" />
+      <item itemvalue="Spring Boot.DemoApplication" />
+      <item itemvalue="Spring Boot.Spring2Application" />
+      <item itemvalue="Spring Boot.Spring3Application" />
+      <item itemvalue="Spring Boot.ErrorHandlingApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ErrorHandlingApplication" />
@@ -205,7 +222,8 @@
       <workItem from="1723328138020" duration="1828000" />
       <workItem from="1723368114149" duration="17000" />
       <workItem from="1723883590487" duration="15559000" />
-      <workItem from="1723900201737" duration="3859000" />
+      <workItem from="1723900201737" duration="4805000" />
+      <workItem from="1723970235400" duration="13631000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -255,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723299378730</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Create new module to explain error handling and validation">
+      <option name="closed" value="true" />
+      <created>1723904399995</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1723904399995</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +295,8 @@
     <MESSAGE value="Add spring3 module and update configurations" />
     <MESSAGE value="Add Service, Repository layers, and Lombok" />
     <MESSAGE value="Add Service, Repository layers, logger, and lombok" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Service, Repository layers, logger, and lombok" />
+    <MESSAGE value="Create new module to explain error handling and validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create new module to explain error handling and validation" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -279,8 +306,23 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/controller/StudentController.java</url>
-          <line>78</line>
+          <line>73</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/controller/StudentController.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/error/GlobalExceptionHandler.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/controller/DelegationController.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

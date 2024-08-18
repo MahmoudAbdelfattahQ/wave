@@ -10,8 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
-import java.util.Map;
-import java.util.Optional;
 
 @Slf4j
 @Service
@@ -48,10 +46,7 @@ public class StudentServiceImpl implements StudentService {
         studentRepository.insertOrUpdateStudent(student);
     }
 
-    @Override
-    public Map<String, Student> getStudentMap() {
-        return studentRepository.getStudentMap();
-    }
+
 
     @Override
     public int countStudents() {
@@ -74,14 +69,13 @@ public class StudentServiceImpl implements StudentService {
     @Override
     public StudentDto findById(String id) throws StudentNotFoundException {
         Student student = studentRepository.findById(id);
-        StudentDto studentDto = new StudentDto(student.getName(), student.getEmail(), student.getAge());
-
-        return studentDto;
+        return new StudentDto(student.getName(), student.getEmail(), student.getAge());
     }
 
     @Override
     public StudentDto findByEmail(String email) throws StudentNotFoundException {
-        Student student = studentRepository.findByEmail(email);
+        Student student = studentRepository.findByEmail(email)
+                .orElseThrow(() -> new StudentNotFoundException("Student with email: " + email + " id not found"));
         return new StudentDto(student.getName(), student.getEmail(), student.getAge());
     }
 
@@ -91,10 +85,21 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public Optional<StudentDto> findFirstStudent() {
+    public StudentDto findFirstStudent() {
         return studentRepository.findAll()
                 .stream()
                 .map(student -> new StudentDto(student.getName(), student.getEmail(), student.getAge()))
-                .findFirst();
+                .findFirst()
+                .orElseThrow(() -> new StudentNotFoundException("First Student is not found"));
+    }
+
+    @Override
+    public boolean contains(String id) {
+        return studentRepository.contains(id);
+    }
+
+    @Override
+    public boolean containsEmail(String email) {
+        return studentRepository.containsEmail(email);
     }
 }

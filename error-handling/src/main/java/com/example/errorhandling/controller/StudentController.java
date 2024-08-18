@@ -6,11 +6,9 @@ import com.example.errorhandling.service.student.StudentService;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
-import java.util.Optional;
 
 @Slf4j
 @RestController
@@ -25,11 +23,12 @@ public class StudentController {
         log.info("Successfully injected StudentService into StudentsController");
     }
 
-    // todo: handle error for the following API
     @PostMapping("insert")
     public void insertStudentApi(@RequestBody StudentDto studentDto) {
-        studentService.insertStudent(studentDto);
-        log.debug("Successfully added {} into the hashMap ", studentDto);
+        if (!studentService.containsEmail(studentDto.getEmail())) {
+            studentService.insertStudent(studentDto);
+            log.debug("Successfully added {} into the hashMap ", studentDto);
+        }
     }
 
     @GetMapping("size")
@@ -38,18 +37,16 @@ public class StudentController {
         return studentService.countStudents();
     }
 
-    // todo: handle error for the following API
     @GetMapping("findFirst")
     public StudentDto findFirstStudentApi() {
-        Optional<StudentDto> studentDtoOptional = studentService.findFirstStudent();
-
-        studentDtoOptional.ifPresent(studentDto -> log.debug("Found Student with email {}", studentDto.getEmail()));
-
-        return studentDtoOptional.orElse(null);
+        return studentService.findFirstStudent();
     }
 
     @GetMapping("find/{id}")
     public StudentDto findStudentByIdApi(@PathVariable String id) throws StudentNotFoundException {
+        if (!studentService.contains(id)) {
+            throw new StudentNotFoundException("Student with id: " + id + " is not found!!");
+        }
         return studentService.findById(id);
     }
 
@@ -63,24 +60,19 @@ public class StudentController {
         return studentService.findAll();
     }
 
-
-    // todo: handle error for the following API
     @DeleteMapping("delete/{id}")
     public void deleteStudentApi(@PathVariable String id) {
         studentService.removeStudent(id);
     }
 
     @PutMapping("update/{id}")
-    public ResponseEntity<String> updateStudentApi(@Valid @RequestBody StudentDto studentDto, @PathVariable String id) {
+    public void updateStudentApi(@Valid @RequestBody StudentDto studentDto, @PathVariable String id) {
 
-        // todo: handle the following check
-        if (!studentService.getStudentMap().containsKey(id)) {
+        if (!studentService.contains(id)) {
             log.error("Student is not found!!");
-            return ResponseEntity.notFound().build();
+            throw new StudentNotFoundException("Student with id: " + id + " is not found!!");
         }
-
         studentService.updateStudent(id, studentDto);
-        return ResponseEntity.ok("Data updated successfully");
     }
 
     @DeleteMapping("removeAll")
