@@ -1,17 +1,16 @@
 package com.example.spring3.service.student;
 
+import com.example.spring3.dao.StudentRepo;
 import com.example.spring3.model.dto.StudentDto;
 import com.example.spring3.model.entity.Student;
-import com.example.spring3.util.RepoUtils;
+import com.example.spring3.util.StudentTransformation;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.example.spring3.dao.StudentRepo;
-import com.example.spring3.controller.StudentsController;
-
-import java.util.*;
+import java.util.Collection;
+import java.util.Map;
+import java.util.Optional;
 
 @Slf4j
 @Component
@@ -26,25 +25,16 @@ public class StudentServiceImpl implements StudentService {
     }
 
     public void insertStudent(StudentDto studentDto) {
-        Student student = new Student();
-        student.setId(String.valueOf(RepoUtils.ID));
-        student.setName(studentDto.getName());
-        student.setEmail(studentDto.getEmail());
-        student.setAge(studentDto.getAge());
-        RepoUtils.ID++;
+        Student createdStudent = StudentTransformation.toStudent(studentDto);
 
-        studentRepo.insertOrUpdateStudent(student);
+        studentRepo.insertOrUpdateStudent(createdStudent);
     }
 
     @Override
     public void updateStudent(String id, StudentDto studentDto) {
-        Student student = new Student();
-        student.setId(id);
-        student.setName(studentDto.getName());
-        student.setEmail(studentDto.getEmail());
-        student.setAge(studentDto.getAge());
+        Student updatedStudent = StudentTransformation.toStudent(id, studentDto);
 
-        studentRepo.insertOrUpdateStudent(student);
+        studentRepo.insertOrUpdateStudent(updatedStudent);
     }
 
     public Map<String, Student> getStudentMap() {
@@ -62,7 +52,7 @@ public class StudentServiceImpl implements StudentService {
     public Collection<StudentDto> findAll() {
         return studentRepo.findAll()
                 .stream()
-                .map(student -> new StudentDto(student.getName(), student.getEmail(), student.getAge()))
+                .map(StudentTransformation::toStudentDto)
                 .toList();
     }
 
@@ -73,7 +63,7 @@ public class StudentServiceImpl implements StudentService {
     public Optional<StudentDto> findFirstStudent() {
         return studentRepo.findAll()
                 .stream()
-                .map(student -> new StudentDto(student.getName(), student.getEmail(), student.getAge()))
+                .map(StudentTransformation::toStudentDto)
                 .findFirst();
     }
 }

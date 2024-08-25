@@ -1,4 +1,4 @@
-package org.example.functionprogramming.delegation;
+package com.example.functionprogramming.delegation;
 
 /**
  * Delegator Class that delegate printing functionality to the delegated classes.

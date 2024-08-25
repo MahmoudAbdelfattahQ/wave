@@ -1,4 +1,4 @@
-package org.example.functionprogramming.error.model;
+package com.example.functionprogramming.error.model;
 
 import lombok.Value;
 

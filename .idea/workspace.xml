@@ -4,30 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0002ffaa-0d77-49e4-b8bb-d6669202a4f6" name="Changes" comment="Create new module to explain error handling and validation">
-      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/controller/DelegationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/delegation/ConsolePrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/delegation/FilePrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/delegation/Printer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/delegation/PrinterHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/delegation/RealPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/error/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/error/model/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/util/printer/PrinterFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/util/printer/PrinterUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/util/printer/Printers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/util/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/util/Utilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="0002ffaa-0d77-49e4-b8bb-d6669202a4f6" name="Changes" comment="Add function-programming module with Spring Boot starter including delegation and clean the structure in spring3 module with error handling&#10;&#10;Created a new &quot;function-programming&quot; module integrating Spring Boot. Added necessary configurations, dependencies, and initial classes including a Printer interface and a FilePrinter implementation. Updated `.gitignore` and project files accordingly.">
+      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/controller/FunctionProgramingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/error/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/error/exception/PrinterArgumentException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/general/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/general/CalculatorInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/general/ProcessFunctions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/general/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/util/FunctionalProgrammingMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/util/StudentTransformation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/repository/StudentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/repository/StudentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/repository/StudentRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/service/student/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/service/student/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/service/student/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/service/student/StudentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/util/designpattern/factory/AnimalFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/util/designpattern/factory/AnimalFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/FunctionProgrammingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/FunctionProgrammingApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/ServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/ServletInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/controller/DelegationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/controller/DelegationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/delegation/ConsolePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/delegation/ConsolePrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/delegation/FilePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/delegation/FilePrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/delegation/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/delegation/Printer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/delegation/PrinterHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/delegation/PrinterHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/delegation/RealPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/delegation/RealPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/error/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/error/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/error/model/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/error/model/ErrorResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/util/printer/PrinterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/util/printer/PrinterFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/util/printer/PrinterUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/util/printer/PrinterUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/util/printer/Printers.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/util/printer/Printers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function-programming/src/test/java/org/example/functionprogramming/FunctionProgrammingApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/test/java/com/example/functionprogramming/FunctionProgrammingApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/service/student/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/service/student/StudentServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +57,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -82,16 +84,19 @@
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "Application.ArrayListTest.executor": "Run",
+    "Application.Calculator.executor": "Debug",
     "Application.DelegationTest.executor": "Run",
     "Application.ErrorHandlingApplication.executor": "Run",
     "Application.HashMapTest.executor": "Run",
     "Application.HashSetTest.executor": "Run",
     "Application.LinkedHashSetTest.executor": "Run",
     "Application.LinkedListTest.executor": "Run",
+    "Application.Main.executor": "Run",
     "Application.Tes.executor": "Run",
     "Application.Test.executor": "Run",
     "Application.TreeSetTest.executor": "Run",
     "Application.com.example.errorhandling.repository.Test.executor": "Run",
+    "Application.org.example.functionprogramming.error.Test.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.data-structure [clean,install].executor": "Run",
     "Maven.demo [clean,install].executor": "Run",
@@ -109,7 +114,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "Spring Boot.ErrorHandlingApplication.executor": "Run",
-    "Spring Boot.FunctionProgrammingApplication.executor": "Debug",
+    "Spring Boot.FunctionProgrammingApplication.executor": "Run",
     "Spring Boot.Spring3Application.executor": "Run",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17",
@@ -170,7 +175,7 @@
     </configuration>
     <configuration name="FunctionProgrammingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="function-programming" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.functionprogramming.FunctionProgrammingApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.functionprogramming.FunctionProgrammingApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -191,8 +196,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.FunctionProgrammingApplication" />
       <item itemvalue="Spring Boot.DemoApplication" />
+      <item itemvalue="Spring Boot.FunctionProgrammingApplication" />
       <item itemvalue="Spring Boot.Spring2Application" />
       <item itemvalue="Spring Boot.Spring3Application" />
       <item itemvalue="Spring Boot.ErrorHandlingApplication" />
@@ -223,7 +228,11 @@
       <workItem from="1723368114149" duration="17000" />
       <workItem from="1723883590487" duration="15559000" />
       <workItem from="1723900201737" duration="4805000" />
-      <workItem from="1723970235400" duration="13631000" />
+      <workItem from="1723970235400" duration="15205000" />
+      <workItem from="1724054270527" duration="16000" />
+      <workItem from="1724574694892" duration="42000" />
+      <workItem from="1724605352439" duration="317000" />
+      <workItem from="1724605677379" duration="16928000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -281,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723904399995</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add function-programming module with Spring Boot starter including delegation and clean the structure in spring3 module with error handling&#10;&#10;Created a new &quot;function-programming&quot; module integrating Spring Boot. Added necessary configurations, dependencies, and initial classes including a Printer interface and a FilePrinter implementation. Updated `.gitignore` and project files accordingly.">
+      <option name="closed" value="true" />
+      <created>1723987125826</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1723987125826</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +313,9 @@
     <MESSAGE value="Add Service, Repository layers, and Lombok" />
     <MESSAGE value="Add Service, Repository layers, logger, and lombok" />
     <MESSAGE value="Create new module to explain error handling and validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create new module to explain error handling and validation" />
+    <MESSAGE value="Create D" />
+    <MESSAGE value="Add function-programming module with Spring Boot starter including delegation and clean the structure in spring3 module with error handling&#10;&#10;Created a new &quot;function-programming&quot; module integrating Spring Boot. Added necessary configurations, dependencies, and initial classes including a Printer interface and a FilePrinter implementation. Updated `.gitignore` and project files accordingly." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add function-programming module with Spring Boot starter including delegation and clean the structure in spring3 module with error handling&#10;&#10;Created a new &quot;function-programming&quot; module integrating Spring Boot. Added necessary configurations, dependencies, and initial classes including a Printer interface and a FilePrinter implementation. Updated `.gitignore` and project files accordingly." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -306,12 +325,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/controller/StudentController.java</url>
-          <line>73</line>
+          <line>71</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/error-handling/src/main/java/com/example/errorhandling/controller/StudentController.java</url>
-          <line>52</line>
+          <line>50</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -320,11 +339,26 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/controller/DelegationController.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/error/GlobalExceptionHandler.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/controller/FunctionProgramingController.java</url>
+          <line>62</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="exception.getErrorCode()" language="JAVA" />
+        <watch expression="exception.getErrorMessage()" language="JAVA" />
+        <watch expression="exception.getDescription()" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

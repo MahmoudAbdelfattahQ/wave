@@ -1,4 +1,4 @@
-package org.example.functionprogramming.util.printer;
+package com.example.functionprogramming.util.printer;
 
 public enum Printers {
     FILE_PRINTER,

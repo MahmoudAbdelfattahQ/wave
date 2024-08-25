@@ -1,4 +1,4 @@
-package org.example.functionprogramming.delegation;
+package com.example.functionprogramming.delegation;
 
 import lombok.extern.slf4j.Slf4j;
 

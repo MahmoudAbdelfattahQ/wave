@@ -1,4 +1,4 @@
-package org.example.functionprogramming.delegation;
+package com.example.functionprogramming.delegation;
 
 public interface Printer {
 
