@@ -19,11 +19,14 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/error-handling/pom.xml" />
         <option value="$PROJECT_DIR$/function-programming/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/jpa/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/set/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-jpa/pom.xml" />
         <option value="$PROJECT_DIR$/untitled/pom.xml" />
       </set>
     </option>

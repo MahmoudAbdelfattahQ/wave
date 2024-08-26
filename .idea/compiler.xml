@@ -13,12 +13,14 @@
         <module name="spring2" />
         <module name="spring1" />
         <module name="datastructure" />
+        <module name="jpa" />
         <module name="list" />
         <module name="function-programming" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="set" target="18" />
+      <module name="spring-jpa" target="17" />
       <module name="spring2 (1)" target="17" />
       <module name="untitled" target="1.8" />
       <module name="wave2" target="17" />
@@ -28,6 +30,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="error-handling" options="-parameters" />
       <module name="function-programming" options="-parameters" />
+      <module name="jpa" options="-parameters" />
       <module name="spring1" options="-parameters" />
       <module name="spring2" options="-parameters" />
       <module name="spring2 (1)" options="-parameters" />

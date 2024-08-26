@@ -4,32 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0002ffaa-0d77-49e4-b8bb-d6669202a4f6" name="Changes" comment="Add function-programming module with Spring Boot starter including delegation and clean the structure in spring3 module with error handling&#10;&#10;Created a new &quot;function-programming&quot; module integrating Spring Boot. Added necessary configurations, dependencies, and initial classes including a Printer interface and a FilePrinter implementation. Updated `.gitignore` and project files accordingly.">
-      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/controller/FunctionProgramingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/error/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/error/exception/PrinterArgumentException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/general/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/general/CalculatorInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/general/ProcessFunctions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/general/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/util/FunctionalProgrammingMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/util/StudentTransformation.java" afterDir="false" />
+    <list default="true" id="0002ffaa-0d77-49e4-b8bb-d6669202a4f6" name="Changes" comment="Remove the JPA project">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/FunctionProgrammingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/FunctionProgrammingApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/ServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/ServletInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/controller/DelegationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/controller/DelegationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/delegation/ConsolePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/delegation/ConsolePrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/delegation/FilePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/delegation/FilePrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/delegation/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/delegation/Printer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/delegation/PrinterHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/delegation/PrinterHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/delegation/RealPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/delegation/RealPrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/error/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/error/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/error/model/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/error/model/ErrorResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/util/printer/PrinterFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/util/printer/PrinterFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/util/printer/PrinterUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/util/printer/PrinterUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming/util/printer/Printers.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/util/printer/Printers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function-programming/src/test/java/org/example/functionprogramming/FunctionProgrammingApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/function-programming/src/test/java/com/example/functionprogramming/FunctionProgrammingApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/service/student/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring3/src/main/java/com/example/spring3/service/student/StudentServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,59 +60,65 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "Application.ArrayListTest.executor": "Run",
-    "Application.Calculator.executor": "Debug",
-    "Application.DelegationTest.executor": "Run",
-    "Application.ErrorHandlingApplication.executor": "Run",
-    "Application.HashMapTest.executor": "Run",
-    "Application.HashSetTest.executor": "Run",
-    "Application.LinkedHashSetTest.executor": "Run",
-    "Application.LinkedListTest.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.Tes.executor": "Run",
-    "Application.Test.executor": "Run",
-    "Application.TreeSetTest.executor": "Run",
-    "Application.com.example.errorhandling.repository.Test.executor": "Run",
-    "Application.org.example.functionprogramming.error.Test.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Maven.data-structure [clean,install].executor": "Run",
-    "Maven.demo [clean,install].executor": "Run",
-    "Maven.function-programming [clean,install].executor": "Run",
-    "Maven.list [clean,install].executor": "Run",
-    "Maven.parent [clean,install,-U].executor": "Run",
-    "Maven.parent [clean,install].executor": "Run",
-    "Maven.spring2 [clean,install].executor": "Run",
-    "Maven.spring3 [clean,install].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "Spring Boot.ErrorHandlingApplication.executor": "Run",
-    "Spring Boot.FunctionProgrammingApplication.executor": "Run",
-    "Spring Boot.Spring3Application.executor": "Run",
-    "git-widget-placeholder": "main",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/abdelaziz/IdeaProjects/wave2/function-programming/src/main/java/org/example/functionprogramming",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.32988507",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Application.ArrayListTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Calculator.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.DelegationTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ErrorHandlingApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HashMapTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HashSetTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LinkedHashSetTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LinkedListTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Tes.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TreeSetTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.example.errorhandling.repository.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Application.org.example.functionprogramming.error.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.data-structure [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.function-programming [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.jpa [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.list [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.parent [clean,install,-U].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.parent [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.spring2 [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.spring3 [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ErrorHandlingApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.FunctionProgrammingApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Spring3Application.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/abdelaziz/IdeaProjects/wave2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.32988507&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/function-programming/src/main/java/org/example/functionprogramming" />
@@ -152,7 +138,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.FunctionProgrammingApplication">
+  <component name="RunManager" selected="Spring Boot.JpaApplication">
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="spring1" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
@@ -180,6 +166,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JpaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="jpa" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.jpa.JpaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Spring2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="spring2" />
@@ -196,6 +189,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.JpaApplication" />
       <item itemvalue="Spring Boot.DemoApplication" />
       <item itemvalue="Spring Boot.FunctionProgrammingApplication" />
       <item itemvalue="Spring Boot.Spring2Application" />
@@ -233,6 +227,14 @@
       <workItem from="1724574694892" duration="42000" />
       <workItem from="1724605352439" duration="317000" />
       <workItem from="1724605677379" duration="16928000" />
+      <workItem from="1724702428693" duration="15000" />
+      <workItem from="1724702481204" duration="7000" />
+      <workItem from="1724707468372" duration="30000" />
+      <workItem from="1724712026210" duration="104000" />
+      <workItem from="1724712188779" duration="14000" />
+      <workItem from="1724713717062" duration="58000" />
+      <workItem from="1724714961487" duration="314000" />
+      <workItem from="1724715891128" duration="541000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -298,11 +300,46 @@
       <option name="project" value="LOCAL" />
       <updated>1723987125826</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Refactor printer type handling in DelegationController&#10;&#10;Updated Printers enum to include type codes and added methods to convert from string and code, replacing valueOf calls. This change improves validation and error handling for printer types in DelegationController.">
+      <option name="closed" value="true" />
+      <created>1724716014877</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1724716014877</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Introduce new JPA project">
+      <option name="closed" value="true" />
+      <created>1724716065144</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1724716065144</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Remove the JPA project">
+      <option name="closed" value="true" />
+      <created>1724716271646</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1724716271646</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
@@ -315,7 +352,11 @@
     <MESSAGE value="Create new module to explain error handling and validation" />
     <MESSAGE value="Create D" />
     <MESSAGE value="Add function-programming module with Spring Boot starter including delegation and clean the structure in spring3 module with error handling&#10;&#10;Created a new &quot;function-programming&quot; module integrating Spring Boot. Added necessary configurations, dependencies, and initial classes including a Printer interface and a FilePrinter implementation. Updated `.gitignore` and project files accordingly." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add function-programming module with Spring Boot starter including delegation and clean the structure in spring3 module with error handling&#10;&#10;Created a new &quot;function-programming&quot; module integrating Spring Boot. Added necessary configurations, dependencies, and initial classes including a Printer interface and a FilePrinter implementation. Updated `.gitignore` and project files accordingly." />
+    <MESSAGE value="Create REST APIs for functional programming, and create transformation layer" />
+    <MESSAGE value="Refactor printer type handling in DelegationController&#10;&#10;Updated Printers enum to include type codes and added methods to convert from string and code, replacing valueOf calls. This change improves validation and error handling for printer types in DelegationController." />
+    <MESSAGE value="Introduce new JPA project" />
+    <MESSAGE value="Remove the JPA project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove the JPA project" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -351,14 +392,12 @@
           </properties>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/function-programming/src/main/java/com/example/functionprogramming/controller/DelegationController.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="SpringBootApplicationConfigurationType">
-        <watch expression="exception.getErrorCode()" language="JAVA" />
-        <watch expression="exception.getErrorMessage()" language="JAVA" />
-        <watch expression="exception.getDescription()" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>
