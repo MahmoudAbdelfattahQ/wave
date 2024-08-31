@@ -62,6 +62,22 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
+    public List<StudentDto> findAllByAge(int age) {
+        return studentRepo.findAllByAge(age)
+                .stream()
+                .map(StudentTransformation::toStudentDto)
+                .toList();
+    }
+
+    @Override
+    public List<StudentDto> findAllByPartOfNameAndGreaterThanAge(String name, int age) {
+        return studentRepo.findAllByPartOfNameAndGreaterThanAge(name, age)
+                .stream()
+                .map(StudentTransformation::toStudentDto)
+                .toList();
+    }
+
+    @Override
     public long count() {
         return studentRepo.count();
     }

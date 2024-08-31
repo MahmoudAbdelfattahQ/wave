@@ -17,5 +17,9 @@ public interface StudentService {
 
     List<StudentDto> findAll();
 
+    List<StudentDto> findAllByAge(int age);
+
+    List<StudentDto> findAllByPartOfNameAndGreaterThanAge(String name, int age);
+
     long count();
 }

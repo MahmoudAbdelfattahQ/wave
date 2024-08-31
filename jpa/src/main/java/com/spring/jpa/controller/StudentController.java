@@ -46,8 +46,20 @@ public class StudentController {
         return studentService.findAll();
     }
 
+    @GetMapping("findAllByAge/{age}")
+    public List<StudentDto> findAllStudentsByAgeApi(@PathVariable int age) {
+        return studentService.findAllByAge(age);
+    }
+
     @GetMapping("count")
     public Long countStudentsApi() {
         return studentService.count();
+    }
+
+
+    @GetMapping("findAllByPartOfNameAndGreaterThanAge/{name}/{age}")
+    public List<StudentDto> findAllStudentsByPartOfNameAndGreaterThanAgeApi(@PathVariable String name,
+                                                                            @PathVariable int age) {
+        return studentService.findAllByPartOfNameAndGreaterThanAge(name, age);
     }
 }

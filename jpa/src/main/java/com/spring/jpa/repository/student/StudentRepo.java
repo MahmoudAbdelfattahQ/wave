@@ -9,7 +9,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 @Repository
-public interface StudentRepo extends JpaRepository<Student, UUID> {
+public interface StudentRepo extends JpaRepository<Student, UUID>, StudentCustomRepo {
 
     Optional<Student> findByEmail(String email);
 

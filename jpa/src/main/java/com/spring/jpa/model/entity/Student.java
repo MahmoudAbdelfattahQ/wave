@@ -1,15 +1,18 @@
 package com.spring.jpa.model.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.UUID;
 
 @Data
 @Entity
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "student")
 public class Student {
     @Id
@@ -29,4 +32,11 @@ public class Student {
 
     @Column(name = "phone_number", nullable = false)
     private String phone;
+
+    @Column(name = "address_id")
+    private UUID addressId;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "address_id", insertable = false, updatable = false)
+    private Address address;
 }
