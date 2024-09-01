@@ -1,4 +1,4 @@
-package com.spring.jpa.controller;
+package com.spring.jpa.controller.student;
 
 import com.spring.jpa.model.dto.StudentDto;
 import com.spring.jpa.service.student.StudentService;
